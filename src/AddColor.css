@@ -1,0 +1,19 @@
+.color-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.color-container form {
+    border: solid 0.1rem white;
+    border-radius: 1rem;
+    margin: 10rem;
+    padding: 2rem;
+    background-color: rgba(100, 222, 122, 0.3);
+}
+
+.color-container form div {
+    padding: 1rem;
+}
