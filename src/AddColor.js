@@ -10,7 +10,7 @@ const AddColor = ({addColor}) => {
 
     const [formData, setFormData] = useState(initialState);
 
-    const history = useHistory();
+    let history = useHistory();
 
     const handleChange = evt => {
         let {name, value} = evt.target;

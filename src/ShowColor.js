@@ -1,9 +1,14 @@
 import React from 'react';
-import {useParams, Link} from 'react-router-dom';
+import {useParams, Link, useHistory} from 'react-router-dom';
 import "./ShowColor.css";
 
 const ShowColor = ({colors}) => {
     const {color} = useParams();
+    let history = useHistory();
+
+    if (colors[color] === undefined) {
+        history.push('/colors');
+    }
 
     return (
         <div className="color-wall" style={{backgroundColor: colors[color]}}>
